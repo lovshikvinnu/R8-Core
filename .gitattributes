@@ -1,0 +1,6 @@
+# Normalize text files in the repository; checkout line endings follow local git settings
+* text=auto
+
+# Binary files
+*.png binary
+*.dcp binary

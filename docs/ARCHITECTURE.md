@@ -247,7 +247,7 @@ Parameter `PROGRAM_INIT_FILE` (default `""`) is passed to `program_memory.INIT_F
 - Contains no CPU logic.
 - It's the synthesis top (`sources_1`) of the Vivado project.
 
-**Current limitation (future FPGA work):** the wrapper connects `clk` and `reset` directly to the CPU. It has no clock buffering or PLL/MMCM, no reset synchronizer or debouncer, and no mapping of debug signals to board LEDs or headers. These depend on the target board, which hasn't been chosen yet.
+**Current limitation (future FPGA work):** the wrapper connects `clk` and `reset` directly to the CPU. It has no clock buffering or PLL/MMCM, no reset synchronizer or debouncer, and no mapping of debug signals to board LEDs or headers. These depend on the target board. The laboratory board is the **AUP-ZU3**, which hasn't been used for implementation or hardware testing yet.
 
 ---
 
@@ -272,7 +272,7 @@ Totals are 519 CLB LUTs, 1,066 FFs, 0 BRAM and 0 DSP; see [`VERIFICATION.md`](VE
 
 | Item | Status |
 | :--- | :--- |
-| Target board selection | Not yet known; `xczu7ev` was used for synthesis only |
+| Target board | **AUP-ZU3** identified as the laboratory board; not yet used. `xczu7ev` was used for synthesis only |
 | XDC constraints (clock period, pins, I/O standards) | Not created |
 | Clock/reset conditioning in the wrapper | Not implemented |
 | Implementation (place and route) | Not run |
