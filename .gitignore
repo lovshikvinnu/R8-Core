@@ -1,0 +1,53 @@
+# ------------------------------------------------------------
+# Vivado project: keep only the .xpr, ignore generated output
+# ------------------------------------------------------------
+*.cache/
+*.runs/
+*.sim/
+*.hw/
+*.gen/
+*.ip_user_files/
+# This project's .srcs holds only Vivado-generated imports (e.g.
+# incremental-synthesis checkpoints); all real sources live in rtl/ tb/ mem/
+custom_8bit_cpu/*.srcs/
+
+.Xil/
+*.jou
+*.log
+*.str
+*.backup.*
+vivado_pid*
+webtalk*
+usage_statistics_webtalk.*
+*.dcp
+*.wdb
+*.wcfg.bak
+*.pb
+*.rpt
+xsim.dir/
+xelab.*
+xvlog.*
+
+# ------------------------------------------------------------
+# Icarus Verilog / waveform output
+# ------------------------------------------------------------
+sim/*
+!sim/.gitkeep
+*.vvp
+*.vcd
+*.fst
+*.lxt
+*.lxt2
+
+# ------------------------------------------------------------
+# OS / editor files
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+__pycache__/
